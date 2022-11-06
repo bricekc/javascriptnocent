@@ -1,7 +1,7 @@
 let table = Number(prompt("choisissez une table de multiplication"));
 let h1 = document.createElement("h1");
 document.body.appendChild(h1);
-document.querySelector("h1").textContent = "Table de multiplication de "+table;
+document.querySelector("h1").textContent = "Table de multiplication de "+ table;
 for(let i = 0;i<11;i++)
 {
     let res = table * i;
