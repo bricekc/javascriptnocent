@@ -25,3 +25,9 @@
 
       // Image du cookie
       let cookieImage = document.querySelector("figure > img");
+
+      function reset()
+      {
+        score.textContent = 0;
+        document.querySelector("button").style.display = "hidden";
+      }
