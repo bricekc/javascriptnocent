@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Inscription</title>
+  </head>
+  <body>
+    <div class="w3-content">
+      <h1>Inscription</h1>
+
+      <form name="signin" method="POST" enctype="multipart/form-data" action="https://iut-info.univ-reims.fr/users/nocent/web/tools/http_request_analyzer.php">
+        <label>Nom</label>
+        <input class="w3-input" type="text" name="lastname"
+               required pattern="[A-Za-z]+">
+
+        <label>Prénom</label>
+        <input class="w3-input" type="text" name="firstname"
+               required pattern="[A-Za-z]+">
+
+        <label>Date de naissance</label>
+        <input class="w3-input" type="date" name="birthdate">
+
+        <label>
+          <input class="w3-radio" type="radio" name="gender" value="female">
+          Femme
+        </label>
+
+        <label>
+          <input class="w3-radio" type="radio" name="gender" value="male">
+          Homme
+        </label>
+
+        <br>
+
+        <label>Pays</label>
+        <select class="w3-select" name="country">
+          <option value="">Choisissez...</option>
+          <option value="1">Allemagne</option>
+          <option value="2">Belgique</option>
+          <option value="3">France</option> 
+        </select>
+
+        <label>Courriel</label>
+        <input class="w3-input" type="email" name="email">
+
+        <label>Mot de passe</label>
+        <input class="w3-input" type="password" name="pswd1">
+
+        <label>Confirmez le mot de passe</label>
+        <input class="w3-input" type="password" name="pswd2">
+
+        <div id="alert" class="w3-panel w3-red" style="display: none">
+          <h2>Attention !</h2>
+          <p>Les mots de passe saisis sont différents.</p>
+        </div>
+
+        <label>Photo</label>
+        <input class="w3-input" type="file" name="photo" accept="image/jpeg, image/png">
+
+        <button class="w3-button w3-blue" type="submit">Envoyer</button>
+        <button class="w3-button w3-red" type="reset">Effacer</button>
+      </form>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

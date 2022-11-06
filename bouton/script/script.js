@@ -1,4 +1,3 @@
-
 let bouton = document.querySelector("button");
 bouton.addEventListener("click", (event) => {
     let red = Math.random()*256;
