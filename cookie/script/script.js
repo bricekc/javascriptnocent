@@ -77,3 +77,12 @@ cookieImage.addEventListener("click", (event) =>
   }
 })
 
+startButton.addEventListener("click", event =>
+{
+  if (playing==false)
+  {
+    playing = true;
+    reset();
+    countdown();
+  }
+}
