@@ -85,4 +85,4 @@ startButton.addEventListener("click", event =>
     reset();
     countdown();
   }
-}
+})
