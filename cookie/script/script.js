@@ -67,7 +67,7 @@ function countdown()
   window.setTimeout(countdown, 1000);
   }
 }
-cookieImage.addEventListener("click", function(event)
+cookieImage.addEventListener("click", event =>
 {
   if (playing)
   {
@@ -75,7 +75,7 @@ cookieImage.addEventListener("click", function(event)
     score.textContent = clickCount;
   }
 });
-startButton.addEventListener("click", function(event)
+startButton.addEventListener("click", event =>
 {
   if (playing==false)
   {
