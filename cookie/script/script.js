@@ -67,22 +67,20 @@ function countdown()
   window.setTimeout(countdown, 1000);
   }
 }
-
-cookieImage.addEventListener("click", (event) =>
+cookieImage.addEventListener("click", function(event)
 {
   if (playing)
   {
     clickCount++;
     score.textContent = clickCount;
   }
-})
-
-startButton.addEventListener("click", event =>
+});
+startButton.addEventListener("click", function(event)
 {
   if (playing==false)
   {
-    playing = true;
+    playing=true;
     reset();
     countdown();
   }
-})
+});
