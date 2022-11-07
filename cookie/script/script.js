@@ -68,3 +68,12 @@ function countdown()
   }
 }
 
+cookieImage.addEventListener("click", (event) =>
+{
+  if (playing)
+  {
+    clickCount++;
+    score.textContent = clickCount;
+  }
+})
+
